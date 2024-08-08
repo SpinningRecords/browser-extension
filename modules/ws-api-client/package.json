@@ -13,7 +13,9 @@
     "build": "cross-env NODE_ENV='production' rollup -c",
     "test": "yarn build & cross-env env-cmd ./.env.testing ava",
     "test:watch": "env-cmd ./.env.testing ava --verbose -w",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -58,7 +60,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "5.1.1",
     "rollup-plugin-typescript": "^1.0.1",
-    "url-join": "^4.0.0"
+    "url-join": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "ava": {
     "require": [
@@ -66,5 +69,6 @@
       "babel-polyfill",
       "./test/helpers/prepare.js"
     ]
-  }
+  },
+  "snyk": true
 }
