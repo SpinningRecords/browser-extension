@@ -21,11 +21,11 @@
     "storybook-readme": "^4.0.2"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.7",
-    "@emotion/styled": "^10.0.7",
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
     "@tippyjs/react": "^4.2.5",
-    "color": "^3.1.0",
-    "emotion": "^10.0.27",
+    "color": "^3.1.4",
+    "emotion": "^11.0.0",
     "emotion-theming": "^10.0.7",
     "react": "^16.8.0",
     "react-custom-scrollbars": "^4.2.1",
